@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deploying on heorku
+
+Copy the config/nginx.conf.erb folder. Make a commit.
+
+Create your heorku app and add buildpacks.
+
+```
+heroku create
+heroku buildpacks:add heroku/nodejs
+heroku buildpacks:add heroku-community/nginx
+```
+
+Then push.
+
 ## Available Scripts
 
 In the project directory, you can run:
