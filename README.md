@@ -4,17 +4,23 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Deploying on heorku
 
+Since https://github.com/mars/create-react-app-buildpack buildpack for Heroku is deprecated, we need to use nginx and node.js buildpacks to deploy to heroku. This requires adding a config file.
+
 Copy the config/nginx.conf.erb folder. Make a commit.
 
 Create your heorku app and add buildpacks.
 
 ```
 heroku create
-heroku buildpacks:add heroku/nodejs
 heroku buildpacks:add heroku-community/nginx
+heroku buildpacks:add heroku/nodejs
 ```
 
 Then push.
+
+```
+git push heroku master
+```
 
 ## Available Scripts
 
