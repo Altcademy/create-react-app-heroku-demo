@@ -8,7 +8,7 @@ Since https://github.com/mars/create-react-app-buildpack buildpack for Heroku is
 
 Copy the config/nginx.conf.erb folder. Make a commit.
 
-Create your heorku app and add buildpacks.
+Create your heorku app and add buildpacks. **Make sure the nginx build pack comes first.**
 
 ```
 heroku create
